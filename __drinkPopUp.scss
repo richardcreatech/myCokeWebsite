@@ -1,0 +1,87 @@
+.myDrinkPopUp{
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.408);
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    
+    .myDrinkSpace{
+        background-color: white;
+        box-sizing: content-box;
+        width: 1000px;
+        width: fit-content;
+        border-radius: 30px;
+
+        .drinkInner{
+            color: black;
+            display: flex;
+
+            .drinkText{
+                padding: 20px;
+                width: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                h1{
+                    font-family: sans-serif;
+
+                    .Orangish{
+                        font-size: 60px;
+                        color: orange;
+                    }
+
+                    .Greenish{
+                        font-family: "Dancing Script";
+                        color: green;
+                    }
+
+                    .Purplish{
+                        color: purple;
+                        font-family: "Bungee Tint", sans-serif;
+                    }
+
+                    .Bluish{
+                        font-size: 60px;
+
+                        color: skyblue;
+                    }
+                }
+            }
+
+            
+            img{
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+}
+
+
+}
+
+@keyframes showDrink {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0.9;
+    }
+}
+
+.myDrinkPopDown{
+    
+    display: flex;
+    animation: showDrink 0.2s ease-in-out;
+
+
+}

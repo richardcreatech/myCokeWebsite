@@ -1,0 +1,11 @@
+$common-color: rgba(0, 0, 0, 0.529);
+$lc: rgba(0, 0, 0, 0.211);
+$cokeGradient: black;
+$cokeGradient: transparent;
+
+
+
+@mixin flexBox{
+    display: flex;
+    align-items: center;
+}

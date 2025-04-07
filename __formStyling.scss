@@ -1,0 +1,131 @@
+footer{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color:  rgba(0, 0, 0, 0.945);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+    .cancelButton{
+        color: white;
+        cursor: grab;
+        
+        
+        hr{
+            visibility: hidden;
+        }
+
+ 
+        
+    }
+
+    .cancelButton:active{
+        cursor: grabbing;
+
+    }
+    
+    .footerSpacing{
+        width: 500px;
+        height: 500px;
+        background-color: rgb(11, 11, 11);
+        border-radius: 0.2rem;
+        box-shadow: 0 0 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    hr{
+        width: 30vw;
+    }
+
+
+    form{
+        display: flex;
+        
+
+        label{
+            display: none;
+        }
+
+        .signUp{
+            gap: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+            input{
+                background-color: rgb(24, 24, 24);
+                height: 40px;
+                width: 300px;
+                color: white;
+                padding: 20px;
+                border: solid 0.1px;
+            }
+
+        }
+
+    }
+
+
+    button{
+        border: none;
+        color: white;
+        background-color: red;
+        height: 30px;
+        width: 80px;
+        border-radius: 0.3rem;
+    }
+
+    .Welcome{
+        font-size: 30px;
+        color: white;
+        font-family: "Dancing script";
+        padding: 20px;
+        animation: typing 0.3s ease-in-out infinite;
+    }
+
+    @keyframes typing{
+        0%{
+            border-right:  0;
+        }
+
+        100%{
+            border-right: solid white 0.3px;
+        }
+    }
+    
+}
+
+
+footer.footer-open{
+    display: flex;
+    overflow: hidden;
+    animation: identifier 0.4s ease-in-out;
+   
+}
+
+@keyframes identifier {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 0.7;
+    }
+}
+
+footer.footer-close{
+    animation: identifier 0.4s ease-in-out reverse;
+    display: none;
+    overflow: hidden;
+}

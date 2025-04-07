@@ -1,0 +1,513 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Pacifico&family=Playwrite+VN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Pacifico&family=Playwrite+VN:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  background-color: whitesmoke;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  position: fixed;
+  box-shadow: 0 0 120px rgba(0, 0, 0, 0.529);
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+header .titleLayer {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: solid 0.3px;
+}
+header .titleLayer h2 {
+  font-family: "Pacifico", cursive;
+}
+header .titleLayer h2 span {
+  color: gray;
+}
+header .navigationLayer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui;
+  padding: 20px;
+  border-bottom: solid 0.3px;
+}
+header .navigationLayer .hideNavigate {
+  visibility: hidden;
+  display: none;
+}
+header .navigationLayer nav ul {
+  display: flex;
+  gap: 40px;
+}
+header .navigationLayer nav ul li {
+  list-style: none;
+}
+header .navigationLayer nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+main .openingPage {
+  color: white;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .openingPage .openingPageSpacing {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main .openingPage .openingPageSpacing .languageSettings {
+  display: flex;
+  gap: 40px;
+}
+main .openingPage .openingPageSpacing .languageSettings h2 {
+  font-family: cursive;
+}
+main .openingPage .openingPageSpacing .languageSettings select {
+  border-radius: 3em;
+  text-align: center;
+  padding: 5px;
+  height: 40px;
+  color: white;
+  background-color: black;
+  border: white solid 0.1px;
+  width: 300px;
+}
+main .openingPage .openingPageSpacing .introText {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+main .openingPage .openingPageSpacing .introText p {
+  font: 1em sans-serif;
+}
+main .openingPage .openingPageSpacing .introText h1 {
+  font-size: 100px;
+  color: red;
+  filter: drop-shadow(0 0 30px red);
+}
+
+.otherProductsPage p {
+  position: relative;
+  padding: 130px;
+  text-align: center;
+  font-family: "Oswald";
+}
+.otherProductsPage ::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+.otherProductsPage .otherProductsPageSpacing {
+  cursor: crosshair;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  padding: 30px;
+  overflow: auto;
+}
+.otherProductsPage .otherProductsPageSpacing .listOfproducts {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.otherProductsPage .otherProductsPageSpacing .listOfproducts .theProduct {
+  transition: all 0.2s linear;
+  position: relative;
+  border: solid;
+  padding: 20px;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.otherProductsPage .otherProductsPageSpacing .listOfproducts .theProduct span {
+  background-color: black;
+  border-radius: 100rem;
+  padding: 5px;
+  text-align: center;
+  color: white;
+  transition: all 0.2s linear;
+  font-family: "Dancing Script";
+}
+.otherProductsPage .otherProductsPageSpacing .listOfproducts .theProduct span:hover {
+  cursor: grab;
+  background-color: rgba(0, 0, 0, 0.529);
+}
+.otherProductsPage .otherProductsPageSpacing .listOfproducts .theProduct span:active {
+  background-color: rgba(0, 0, 0, 0.211);
+  cursor: grabbing;
+}
+.otherProductsPage .otherProductsPageSpacing .listOfproducts .theProduct img {
+  width: 100px;
+}
+.otherProductsPage .otherProductsPageSpacing .listOfproducts .theProduct:hover {
+  scale: 1.2;
+}
+
+.visitButton {
+  width: 100px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 1em;
+}
+
+.visitButton:hover {
+  background-color: rgba(0, 0, 0, 0.671);
+}
+
+@keyframes flyIn1 {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translateY(-10px);
+  }
+}
+@keyframes flyIn2 {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0.5;
+    transform: translateY(-70px);
+  }
+}
+.missionsPage {
+  color: white;
+  margin-top: 200px;
+  background: transparent;
+  padding: 200px;
+  height: 350vh;
+  width: 100vw;
+}
+.missionsPage .missionsPageSpacing .divideHeadQuarters {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.missionsPage .missionsPageSpacing .divideHeadQuarters .divideHeadQuartersSpacing {
+  background-color: white;
+  display: flex;
+  gap: 100px;
+}
+.missionsPage .missionsPageSpacing .divideHeadQuarters .divideHeadQuartersSpacing h1, .missionsPage .missionsPageSpacing .divideHeadQuarters .divideHeadQuartersSpacing p {
+  color: black;
+  width: 400px;
+}
+.missionsPage .missionsPageSpacing .divideHeadQuarters .divideHeadQuartersSpacing h1 {
+  font-family: "Roboto", sans-serif;
+}
+.missionsPage .missionsPageSpacing .divideHeadQuarters .divideHeadQuartersSpacing img {
+  width: 400px;
+  border-radius: 1rem;
+}
+.missionsPage .cokeAppSection {
+  margin-top: 160px;
+  display: flex;
+  align-items: center;
+  margin-left: 500px;
+  gap: 100px;
+}
+.missionsPage .cokeAppSection h1 {
+  font-family: Roboto;
+}
+.missionsPage .cokeAppSection p {
+  max-width: 400px;
+  color: black;
+}
+.missionsPage .familySection {
+  margin-top: 160px;
+}
+.missionsPage .familySection .familySectionSpacing {
+  font-family: Roboto;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+.missionsPage .addQuarters {
+  display: flex;
+  animation: flyIn1 2s ease-in-out;
+}
+.missionsPage .addCoke {
+  display: block;
+  animation: flyIn2 2s ease-in-out;
+}
+.missionsPage .addFamilySection {
+  display: block;
+  animation: flyIn3 2s ease-in-out reverse;
+}
+
+footer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.945);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+footer .cancelButton {
+  color: white;
+  cursor: grab;
+}
+footer .cancelButton hr {
+  visibility: hidden;
+}
+footer .cancelButton:active {
+  cursor: grabbing;
+}
+footer .footerSpacing {
+  width: 500px;
+  height: 500px;
+  background-color: rgb(11, 11, 11);
+  border-radius: 0.2rem;
+  box-shadow: 0 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer hr {
+  width: 30vw;
+}
+footer form {
+  display: flex;
+}
+footer form label {
+  display: none;
+}
+footer form .signUp {
+  gap: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer form .signUp input {
+  background-color: rgb(24, 24, 24);
+  height: 40px;
+  width: 300px;
+  color: white;
+  padding: 20px;
+  border: solid 0.1px;
+}
+footer button {
+  border: none;
+  color: white;
+  background-color: red;
+  height: 30px;
+  width: 80px;
+  border-radius: 0.3rem;
+}
+footer .Welcome {
+  font-size: 30px;
+  color: white;
+  font-family: "Dancing script";
+  padding: 20px;
+  animation: typing 0.3s ease-in-out infinite;
+}
+@keyframes typing {
+  0% {
+    border-right: 0;
+  }
+  100% {
+    border-right: solid white 0.3px;
+  }
+}
+
+footer.footer-open {
+  display: flex;
+  overflow: hidden;
+  animation: identifier 0.4s ease-in-out;
+}
+
+@keyframes identifier {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}
+footer.footer-close {
+  animation: identifier 0.4s ease-in-out reverse;
+  display: none;
+  overflow: hidden;
+}
+
+.featuresPage .sectionsPageSpacing .featureCaption {
+  text-align: center;
+  font-size: 100px;
+  font-family: "Roboto", sans-serif;
+}
+.featuresPage .sectionsPageSpacing .secondDivision .latestGallery {
+  overflow: auto;
+  display: flex;
+  gap: 40px;
+}
+.featuresPage .sectionsPageSpacing .secondDivision .latestGallery .gallSec img {
+  border-radius: 1.5rem;
+  width: 300px;
+}
+.featuresPage .sectionsPageSpacing .firstDivision .latestGallery {
+  overflow: auto;
+  display: flex;
+  gap: 40px;
+}
+.featuresPage .sectionsPageSpacing .firstDivision .latestGallery .gallSec img {
+  border-radius: 1.5rem;
+  width: 300px;
+}
+.featuresPage .sectionsPageSpacing .firstDivision .latestGallery h1 {
+  padding: 40px;
+}
+.featuresPage .sectionsPageSpacing .firstDivision h2, .featuresPage .sectionsPageSpacing .secondDivision h2 {
+  font-size: 30px;
+  padding: 40px;
+}
+.featuresPage .sectionsPageSpacing .firstDivision, .featuresPage .sectionsPageSpacing .secondDivision {
+  font-family: "Roboto", sans-serif;
+}
+.featuresPage .sectionsPageSpacing .secondDivision {
+  margin-top: 100px;
+}
+.featuresPage .sectionsPageSpacing .firstDivision .latestGallery::-webkit-scrollbar, .featuresPage .sectionsPageSpacing .secondDivision .latestGallery::-webkit-scrollbar {
+  display: none;
+}
+
+.firstDivision h2 {
+  text-align: left;
+}
+
+.secondDivision h2 {
+  text-align: right;
+}
+.secondDivision hr {
+  padding: 40px;
+}
+
+hr.spaceOut {
+  margin: 40px;
+  visibility: hidden;
+}
+
+.backTop {
+  position: fixed;
+  z-index: 9;
+  bottom: 40px;
+  right: 40px;
+}
+.backTop button {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 50rem;
+  font-size: 20px;
+}
+.backTop button i {
+  color: rgba(0, 0, 0, 0.519);
+}
+
+.featureCaption {
+  font-size: 50px !important;
+}
+
+.myDrinkPopUp {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.408);
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.myDrinkPopUp .myDrinkSpace {
+  background-color: white;
+  box-sizing: content-box;
+  width: 1000px;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 30px;
+}
+.myDrinkPopUp .myDrinkSpace .drinkInner {
+  color: black;
+  display: flex;
+}
+.myDrinkPopUp .myDrinkSpace .drinkInner .drinkText {
+  padding: 20px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.myDrinkPopUp .myDrinkSpace .drinkInner .drinkText h1 {
+  font-family: sans-serif;
+}
+.myDrinkPopUp .myDrinkSpace .drinkInner .drinkText h1 .Orangish {
+  font-size: 60px;
+  color: orange;
+}
+.myDrinkPopUp .myDrinkSpace .drinkInner .drinkText h1 .Greenish {
+  font-family: "Dancing Script";
+  color: green;
+}
+.myDrinkPopUp .myDrinkSpace .drinkInner .drinkText h1 .Purplish {
+  color: purple;
+  font-family: "Bungee Tint", sans-serif;
+}
+.myDrinkPopUp .myDrinkSpace .drinkInner .drinkText h1 .Bluish {
+  font-size: 60px;
+  color: skyblue;
+}
+.myDrinkPopUp .myDrinkSpace .drinkInner img {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes showDrink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+.myDrinkPopDown {
+  display: flex;
+  animation: showDrink 0.2s ease-in-out;
+}/*# sourceMappingURL=style.css.map */

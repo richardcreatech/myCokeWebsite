@@ -1,0 +1,99 @@
+@import '_functions';
+@import '_animations';
+
+
+.missionsPage{
+    color: white;
+    margin-top: 200px;
+    background: $cokeGradient;
+    padding: 200px;
+    height: 350vh;
+    width: 100vw;
+
+    .missionsPageSpacing{
+
+        .divideHeadQuarters{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+
+            .divideHeadQuartersSpacing{
+                background-color: white;
+                display: flex;
+                gap: 100px;
+
+
+                h1 , p{
+                    color: black;
+                    width: 400px;
+                }
+
+                h1{
+                    font-family: "Roboto", sans-serif;
+                }
+
+                
+
+                img{
+                    width: 400px;
+                    border-radius: 1rem;
+                }
+
+            }
+
+        }
+    }
+
+
+
+    .cokeAppSection{
+        margin-top: 160px;
+        display: flex;
+        align-items: center;
+        margin-left: 500px;
+        gap: 100px;
+
+        h1{
+            font-family: Roboto;
+        }
+
+        p{
+            max-width: 400px;
+            color: black;
+        }
+    }
+
+    .familySection{
+        margin-top: 160px;
+        .familySectionSpacing{
+            font-family: Roboto;
+            display: flex;
+            gap: 100px;
+            align-items: center;
+        }
+
+    }
+
+
+
+    .addQuarters{
+        display: flex;
+        animation: flyIn1 2s ease-in-out;
+    }
+
+    .addCoke{
+        display: block;
+        animation: flyIn2 2s ease-in-out;
+    }
+
+    .addFamilySection{
+        display: block;
+        animation: flyIn3 2s ease-in-out reverse;
+    }
+
+
+    
+
+
+}

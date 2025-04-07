@@ -1,0 +1,89 @@
+@import '_functions';
+
+.otherProductsPage{
+    
+    p{
+        position: relative;
+        padding: 130px;
+        text-align: center;
+        font-family: "Oswald";
+    }
+    
+    ::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+    }
+    
+    .otherProductsPageSpacing{
+        cursor: crosshair;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 50px;
+        padding: 30px;
+        overflow: auto;
+        
+        .listOfproducts{
+            display: flex;
+            align-items: center;
+            gap: 100px;
+            
+
+            .theProduct{
+                transition: all 0.2s linear;
+                position: relative;
+                border: solid;
+                padding: 20px;
+                border-radius: 0.5rem;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                span{
+                    background-color: black;
+                    border-radius: 100rem;
+                    padding: 5px;
+                    text-align: center;
+                    color: white;
+                    transition: all 0.2s linear;
+                    font-family: "Dancing Script";
+                }
+
+                span:hover{
+                    cursor: grab;
+                    background-color: $common-color;
+                }
+                span:active{
+                    background-color: $lc;
+                    cursor: grabbing;
+                }
+
+                
+                img{
+                    width: 100px;
+                }
+
+                
+            }
+
+            .theProduct:hover{
+                scale: 1.2;
+            }
+        }
+    }
+
+}
+
+.visitButton{
+    width: 100px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 1em;
+}
+
+.visitButton:hover{
+    background-color: rgba(0, 0, 0, 0.671);
+}
+

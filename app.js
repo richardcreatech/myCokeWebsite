@@ -293,3 +293,62 @@ else{
 }
 
 }
+
+
+
+
+const mySelect = document.getElementById('mySelect');
+const haveRefresh = document.getElementById('haveRefresh');
+const changeLanguage = document.getElementById('changeLanguage');
+const tasteCocaCola = document.getElementById('tasteCocaCola');
+const otherProducts = document.getElementById('otherProducts');
+const seeMoreText = document.getElementsByClassName('seeMore');
+const purposeHead = document.getElementById('purposeHead');
+const purposeText = document.getElementById('purposeText');
+const accessText = document.getElementById('accessText');
+const accessLead = document.getElementById('accessLead');
+const familyText = document.getElementById('familyText');
+const featureCaption = document.getElementsByClassName('featureCaption');
+const ourLatest = document.getElementsByClassName('ourLatest');
+
+changeLanguage.addEventListener('click', () => {
+  if (mySelect.value === 'Mandarin') {
+    for(let i = 0; i < ourLatest.length; i++){
+        ourLatest[i].innerHTML = `
+        最新精选
+        `;
+    }
+    featureCaption[0].innerHTML='精选文章'
+    haveRefresh.innerHTML = '来点清爽的';
+    tasteCocaCola.innerHTML = `
+    可口可乐的味道
+    `;
+    otherProducts.innerHTML = `
+    其他产品
+    `
+    for(let i = 0; i < seeMoreText.length; i++){
+        seeMoreText[i].innerHTML = `
+        查看更多
+        `
+    }
+    purposeHead.innerHTML = `
+    我们的宗旨是焕新世界，创造不同。
+    `
+    purposeText.innerHTML = `
+    我们致力于在多个品类和规格中，提供人们更多他们喜爱的饮品，同时推动可持续解决方案，为我们的业务注入韧性，并为地球带来积极变化。
+    `
+
+    accessText.innerHTML = `
+    随时随地访问应用程序
+    `
+    accessLead.innerHTML = `
+    轻松获取成千上万的可口可乐精选内容，尽在指尖。
+    `
+    familyText.innerHTML = `
+    与家人分享一瓶可口可乐
+    `
+
+  } else {
+    haveRefresh.innerHTML = 'Have a Refreshing';
+  }
+});

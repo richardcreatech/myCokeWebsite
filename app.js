@@ -348,7 +348,24 @@ changeLanguage.addEventListener('click', () => {
     与家人分享一瓶可口可乐
     `
 
-  } else {
+  } 
+  else {
+    for (let i = 0; i < ourLatest.length; i++) {
+      ourLatest[i].innerHTML = `Our Latest Picks`;
+    }
+    featureCaption[0].innerHTML = 'Featured Articles';
     haveRefresh.innerHTML = 'Have a Refreshing';
+    tasteCocaCola.innerHTML = `Taste the Coca-Cola`;
+    otherProducts.innerHTML = `Other Products`;
+    for (let i = 0; i < seeMoreText.length; i++) {
+      seeMoreText[i].innerHTML = `See More`;
+    }
+    purposeHead.innerHTML = `Our Purpose is to Refresh the World and Make a Difference.`;
+    purposeText.innerHTML = `
+      We're committed to offering people more of the drinks they want across a range of categories and package sizes, driving sustainable solutions that build resilience into our business and make a positive difference for the planet.
+    `;
+    accessText.innerHTML = `Access the App Anywhere, Anytime`;
+    accessLead.innerHTML = `Effortlessly access thousands of Coca-Cola favorites at your fingertips.`;
+    familyText.innerHTML = `Share a Coke with Family`;
   }
 });
